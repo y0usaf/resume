@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sami Ansari</title>
+  <style>
+    @font-face {
+      font-family: "Departure Mono";
+      src: url("assets/DepartureMono-Regular.ttf") format("truetype");
+      font-weight: 400;
+      font-style: normal;
+      font-display: block;
+    }
+
+    :root {
+      --canvas: #e4e3dc;
+      --paper: #f5f4ef;
+      --ink: #17171a;
+      --rule: #c3c1b6;
+      --dim: #6e6e66;
+      --accent: #0f5fd6;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { background: var(--canvas); }
+
+    body {
+      min-width: max-content;
+      margin: 0;
+      padding: 32px;
+      color: var(--ink);
+      background: var(--canvas);
+    }
+
+    .paper {
+      position: relative;
+      width: 8.5in;
+      height: 11in;
+      margin: 0 auto;
+      padding: 60px 72px;
+      background: var(--paper);
+      box-shadow: 0 1px 3px rgb(0 0 0 / 14%), 0 12px 32px rgb(0 0 0 / 10%);
+    }
+
+    .terminal {
+      width: 672px;
+      height: 936px;
+      margin: 0;
+      overflow: visible;
+      color: inherit;
+      font: 11px/13px "Departure Mono", monospace;
+      font-variant-numeric: tabular-nums;
+      white-space: pre;
+      tab-size: 2;
+      -webkit-font-smoothing: none;
+      font-smooth: never;
+    }
+
+    .terminal::selection,
+    .terminal *::selection { background: rgb(15 95 214 / 24%); }
+
+    .accent { color: var(--accent); }
+    .dim { color: var(--dim); }
+    .rule-tone { color: var(--rule); }
+    .strong { font-weight: 700; }
+
+    .logos {
+      position: absolute;
+      inset: 60px 72px;
+      width: 672px;
+      height: 936px;
+      pointer-events: none;
+    }
+
+    .logos img {
+      position: absolute;
+      left: 0;
+      width: 14px;
+      height: 13px;
+      object-fit: contain;
+      object-position: center;
+    }
+
+    @page { size: letter; margin: 0; }
+
+    @media print {
+      html, body {
+        margin: 0;
+        padding: 0;
+        background: #fff;
+      }
+
+      .paper {
+      position: relative;
+        margin: 0;
+        background: #fff;
+        box-shadow: none;
+      }
+
+      * {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="paper">
+    <pre class="terminal" aria-label="Sami Ansari résumé"><span class="rule-tone">+----------------------------------------------------------------------------------------------+</span>
+<span class="rule-tone">|</span><span class="strong">  SAMI ANSARI  </span><span class="dim">                                                     Toronto, Ontario, Canada  </span><span class="rule-tone">|</span>
+<span class="rule-tone">|</span><span class="dim">                                                   +1 647 289 6889 / SAnsari2805@Outlook.com  </span><span class="rule-tone">|</span>
+<span class="rule-tone">|</span><span class="accent">  machine-learning / ai-engineering</span><span class="dim">                 linkedin/in/samiansari99 / github/y0usaf  </span><span class="rule-tone">|</span>
+<span class="rule-tone">+----------------------------------------------------------------------------------------------+</span>
+
+<span class="accent strong">[ EXPERIENCE ]</span><span class="rule-tone"> ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─</span>
+   AI-Native Software Engineer / CookUnity / Toronto                          Oct 2025 — Present
+    <span class="accent strong">→</span> Built and shipped an AI code review pipeline — multi-model cross-critique, arbiter
+      verdicts, per-stage cost/token telemetry — in GitHub Actions CI across 10+ repositories,
+      with Mixpanel dashboards for ROI tracking
+    <span class="accent strong">→</span> Architected a full-stack performance review platform (Next.js, Supabase, Slack) used in
+      live HR pilot cycles: AI-assisted review writing, Slack emoji evidence capture, OKR
+      management, 1:1 transcript import
+    <span class="accent strong">→</span> Bootstrapped an inventory reconciliation app integrated with WholesaleWare: roll-
+      forward expected-inventory engine, variance analysis, audited manual adjustments, multi-
+      warehouse reporting
+    <span class="accent strong">→</span> Founded a Claude Code plugin marketplace, packaging engineering workflows into versioned,
+      sandboxed plugins with auto-discovery and deterministic hooks; extended to OpenAI Codex
+      CLI and Opencode
+    <span class="accent strong">→</span> Scaled org-wide AI enablement as central intake owner for 100+ help requests (Claude
+      Enterprise, Vercel, v0, n8n, Hex, Retool) and triaged 12+ cross-functional AI
+      project requests
+    <span class="accent strong">→</span> Deployed CookUnity&#x27;s remote MCP server and piloted purchase-order automation via the Ramp
+      API, shipping production PO creation for 3 3PL vendor pilots
+
+   AI Engineer (Contract) / Rootly / Toronto                                 Oct 2024 — Dec 2024
+    <span class="accent strong">→</span> Founding AI engineer; built a proof-of-concept AI agent framework using RAG for
+      automated root-cause analysis, integrating Rootly, Slack, and GitHub with an end-to-end
+      data pipeline
+
+   Machine Learning Engineer Intern / Cohere / Toronto                       Apr 2024 — Oct 2024
+    <span class="accent strong">→</span> Improved LLM quantitative reasoning by 3% by developing a fully synthetic training dataset
+      (no human annotation); first engineer to contribute a fully synthetic dataset to the
+      Command-R-Plus foundation model
+    <span class="accent strong">→</span> Designed specialized evaluations for length control and adapted FinanceBench for
+      base-model assessment; ran ablation studies to quantify dataset impact across
+      evaluation categories
+    <span class="accent strong">→</span> Partnered with evaluations, multilingual, and safety teams to generate synthetic
+      multilingual training data
+
+   Senior Data Quality Team Lead / Cohere / Toronto                          Jun 2023 — Apr 2024
+    <span class="accent strong">→</span> Designed and deployed a scalable data-labeling platform (React/TypeScript +
+      Firebase/Firestore) processing 100,000+ tasks for 200+ labelers, saving ~$3M in
+      operational costs
+    <span class="accent strong">→</span> Built backend data infrastructure and Python/AppsScript tooling to analyze tasks and
+      surface insights for ML model improvements
+    <span class="accent strong">→</span> Led SFT/RLHF labeling projects and the first cohort of STEM/code-focused labelers;
+      partnered with vendors to standardize post-training data quality
+
+   Data Quality Specialist / Cohere / Toronto                                May 2023 — Jun 2023
+    <span class="accent strong">→</span> Delivered annotations spanning preference ranking, quality scoring, and SFT
+      conversation generation
+
+
+<span class="accent strong">[ SPEAKING ]</span><span class="rule-tone"> ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─</span>
+<span class="strong">   Guest Lecturer: AI &amp; Synthetic Data Generation / Queen&#x27;s Smith School of Business        </span><span class="dim">2024</span>
+    <span class="accent strong">→</span> Kingston / 50+ MMA graduate students
+
+
+<span class="accent strong">[ SKILLS ]</span><span class="rule-tone"> ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─</span>
+<span class="strong">  LANGUAGES      </span><span class="dim">Python / TypeScript / JavaScript / SQL / C/C++ / Bash / Nix</span>
+<span class="strong">  ML &amp; AI        </span><span class="dim">LLM fine-tuning / RAG / RLHF / SFT / synthetic data / evaluation / PyTorch /</span>
+<span class="dim">                 JAX</span>
+<span class="strong">  FRAMEWORKS     </span><span class="dim">FastAPI / React / Pandas / Polars / Tailwind</span>
+<span class="strong">  INFRASTRUCTURE </span><span class="dim">AWS (S3, Lambda, Bedrock) / Docker / Linux / NixOS / Slurm / Git / Redis /</span>
+<span class="dim">                 DuckDB / Firebase</span>
+
+<span class="accent strong">[ PROJECTS ]</span><span class="rule-tone"> ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─</span>
+<span class="strong">   NixOS System — multi-device config with self-hosted services</span>
+<span class="strong">   tweakcc — added bunx support to Claude Code customization tool</span>
+<span class="strong">   claude-code-nix — contributed hourly builds and Cachix integration</span></pre>
+    <div class="logos" aria-hidden="true">
+      <img src="assets/cookunity.png" alt="" style="top: 91px">
+      <img src="assets/rootly.png" alt="" style="top: 338px">
+      <img src="assets/cohere.png" alt="" style="top: 403px">
+      <img src="assets/cohere.png" alt="" style="top: 533px">
+      <img src="assets/cohere.png" alt="" style="top: 650px">
+
+    </div>
+  </main>
+</body>
+</html>
