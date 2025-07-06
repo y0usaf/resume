@@ -1,0 +1,178 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+\usepackage[default]{roboto}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+% Set minimum footskip to avoid warnings
+\setlength{\footskip}{5pt}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+\item\small{
+{#1 \vspace{-2pt}}
+}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textit{\small#1} & \textit{\small #2} \\
+\end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\small#1 & #2 \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=-2pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=-2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%% RESUME STARTS HERE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{center}
+\textbf{\Huge Sami Ansari} \\ \vspace{1pt}
+\small +1 (647) 289-6889 $|$ \href{mailto:SAnsari2805@Outlook.com}{\underline{SAnsari2805@Outlook.com}} $|$
+\href{https://linkedin.com/in/samiansari99/}{\underline{linkedin.com/in/samiansari99/}} $|$
+\href{https://github.com/y0usaf}{\underline{github.com/y0usaf}}
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Rootly}{Toronto, Ontario, Canada}
+{Founding AI Engineer}{Oct 2024 -- Dec 2024}
+\resumeItemListStart
+\resumeItem{Architecting an advanced orchestration framework utilizing multiple LLM agents to automate root cause analysis for SRE incidents}
+\resumeItem{Developing end-to-end data pipeline integrating Rootly, Slack, Github, and observability logs to generate actionable ML insights}
+\resumeItem{Building comprehensive evaluation framework to measure and optimize agent performance in production}
+\resumeItemListEnd
+
+\resumeSubheading
+{Cohere}{Toronto, Ontario, Canada}
+{Machine Learning Engineer Intern}{Apr 2024 -- Oct 2024}
+\resumeItemListStart
+\resumeItem{Enhanced LLM mathematical reasoning by 3\% through development of novel synthetic training dataset without human annotation}
+\resumeItem{Led 4-person team in designing and deploying scalable data labeling platform processing 100,000+ continuous tasks}
+\resumeItem{Implemented advanced synthetic data generation techniques and comprehensive benchmarking system for LLM optimization}
+\resumeItem{Conducted in-depth model ablation studies analyzing impact of specific datasets on cross-category performance}
+\resumeItemListEnd
+
+\resumeSubheading
+{Cohere}{Toronto, Ontario, Canada}
+{Senior Data Quality Team Lead}{May 2023 -- Apr 2024}
+\resumeItemListStart
+\resumeItem{Led team of 200+ AI annotators, implementing best practices that significantly improved data quality and annotation accuracy}
+\resumeItem{Developed Python applications analyzing 40,000+ tasks to extract insights for ML model improvements}
+\resumeItem{Engineered automated quality assessment and ticketing system optimizing feedback loops between ML teams}
+\resumeItem{Established data quality standards for STEM and code datasets critical for foundation model training}
+\resumeItem{Created comprehensive assessment framework for AI Data Trainer recruitment and evaluation}
+\resumeItemListEnd
+
+\resumeSubSubheading{Data Quality Specialist}{May 2023 -- May 2023}
+\resumeItemListStart
+\resumeItem{Drove data quality initiatives enhancing language model capabilities through systematic improvements}
+\resumeItem{Delivered high-impact annotations boosting LLM performance across multiple domains}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{AI Data Annotation Platform} $|$ \emph{Python, React, Firebase, FastAPI}}{Jan 2024 -- Oct 2024}
+\resumeItemListStart
+\resumeItem{Architected and deployed full-stack web application streamlining AI data annotation workflow}
+\resumeItem{Implemented React frontend with Firebase backend enabling real-time collaboration}
+\resumeItem{Optimized data storage and retrieval using Firestore leading to successful deployment}
+\resumeItem{Project success directly contributed to securing multiple ML engineering opportunities}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Queen's Smith School of Business}{Kingston, Ontario}
+{Guest Lecturer, MMA Program: AI and Synthetic Data Generation}{2024}
+
+\resumeSubheading
+{University of Toronto}{Toronto, Ontario}
+{Bachelor of Science in Computer Science and Mathematics}{Sep. 2017 -- May 2022}
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\textbf{Machine Learning}{: LLM Development, Foundation Models, AWS Bedrock, LangChain, PyTorch, JAX} \\
+\textbf{Languages}{: Python, TypeScript/JavaScript, SQL (PostgreSQL), C/C++, Bash} \\
+\textbf{Frameworks}{: FastAPI, React, Streamlit, Pandas, Polars, Redis, DuckDB, Pydantic} \\
+\textbf{Developer Tools}{: AWS, Docker, Git, GCP, VS Code, PyCharm, Neovim} \\
+\textbf{Libraries}{: NumPy, Matplotlib, TailwindCSS, Sympy, Graphviz}
+}}
+\end{itemize}
+
+\end{document}
