@@ -1,6 +1,8 @@
-*.aux
-*.log
-*.out
-*.synctex.gz
-*.fls
-*.fdb_latexmk
+# Block everything except specific files and folders
+*
+!.gitignore
+!README.md
+!resume_samiansari.pdf
+!resume_samiansari.tex
+!assets/
+!assets/**

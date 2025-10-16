@@ -6,11 +6,43 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage[english]{babel}
 \usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{graphicx}
 \input{glyphtounicode}
 
 %----------FONT OPTIONS----------
 \usepackage{sourceserifpro}
 \usepackage[T1]{fontenc}
+
+%----------COLOR DEFINITIONS----------
+\definecolor{linkcolor}{RGB}{0, 100, 200}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=linkcolor
+}
+
+%----------MACRO DEFINITIONS----------
+% Define consistent itemize environment
+\newenvironment{resumeitemize}{
+  \begin{itemize}[leftmargin=0.5in, itemsep=-1pt, topsep=1pt, labelsep=0.035in]
+}{
+  \end{itemize}
+}
+
+% Define experience entry macro
+\newcommand{\experience}[4]{
+  \begin{tabular}[t]{@{}p{6.5in}@{}}
+    {\large\bfseries #1} \hfill {\small #2} \\
+    {\bfseries #3}, #4
+  \end{tabular}
+}
+
+
+
+% Define consistent section spacing
+\newcommand{\sectionspace}{\vspace{2pt}}
+\newcommand{\afterspacespace}{\vspace{1pt}}
 
 % Adjust margins - balanced
 \addtolength{\oddsidemargin}{-0.5in}
@@ -28,10 +60,10 @@
 % Modern section formatting
 \newlength{\sectionwidth}
 \titleformat{\section}{
-\vspace{-6pt}\raggedright\Large\bfseries
+\vspace{-8pt}\raggedright\Large\bfseries
 }{}{0em}{%
   \settowidth{\sectionwidth}{\Large\bfseries#1}%
-  #1\vspace{-13pt}\\\rule{\sectionwidth}{0.4pt}\vspace{-8pt}%
+  #1\vspace{-13pt}\\\rule{\sectionwidth}{0.4pt}\vspace{-10pt}%
 }
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -46,66 +78,56 @@
 {\LARGE\bfseries Sami Ansari} \\
 \vspace{1pt}
 {\rule{0.3\textwidth}{0.5pt}} \\
-\vspace{4pt}
-\small +1 (647) 289-6889 \enspace | \enspace \href{mailto:SAnsari2805@Outlook.com}{SAnsari2805@Outlook.com} \enspace | \enspace \href{https://linkedin.com/in/samiansari99/}{linkedin.com/in/samiansari99} \enspace | \enspace \href{https://github.com/y0usaf}{github.com/y0usaf}
+\vspace{2pt}
+\small \href{tel:+16472896889}{+1 (647) 289-6889} \enspace | \enspace \href{mailto:SAnsari2805@Outlook.com}{SAnsari2805@Outlook.com} \enspace | \enspace \href{https://linkedin.com/in/samiansari99/}{linkedin.com/in/samiansari99} \enspace | \enspace \href{https://github.com/y0usaf}{github.com/y0usaf}
 \end{center}
-\vspace{-4pt}
+\vspace{-6pt}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
 
-\hspace{0.15in}{\large\bfseries AI Engineer (Contract)} \hfill {\small Oct 2024 -- Dec 2024} \\
-\hspace{0.15in}{\bfseries Rootly}, Toronto, Ontario, Canada
-\vspace{-1pt}
-\begin{itemize}[leftmargin=0.35in, itemsep=-1pt, topsep=1pt, labelsep=0.035in]
+\hspace{0.15in}\raisebox{-0.5\height}{\includegraphics[height=1em]{assets/rootly.png}} \experience{AI Engineer (Contract)}{Oct 2024 -- Dec 2024}{Rootly}{Toronto, Ontario, Canada}
+\begin{resumeitemize}
 \item Built proof-of-concept AI agent framework using RAG for automated root cause analysis of SRE incidents
 \item Developed end-to-end data pipeline demo integrating Rootly, Slack, GitHub using webhooks and API integrations to generate actionable ML insights
 \item Implemented custom chunking algorithms for processing large-scale observability data from monitoring systems
-\end{itemize}
-\vspace{1pt}
+\end{resumeitemize}
+\sectionspace
 
-\hspace{0.15in}{\large\bfseries Machine Learning Engineer Intern} \hfill {\small Apr 2024 -- Oct 2024} \\
-\hspace{0.15in}{\bfseries Cohere}, Toronto, Ontario, Canada
-\vspace{-1pt}
-\begin{itemize}[leftmargin=0.35in, itemsep=-1pt, topsep=1pt, labelsep=0.035in]
+\hspace{0.15in}\raisebox{-0.5\height}{\includegraphics[height=1em]{assets/cohere.png}} \experience{Machine Learning Engineer Intern}{Apr 2024 -- Oct 2024}{Cohere}{Toronto, Ontario, Canada}
+\begin{resumeitemize}
 \item Enhanced LLM quantitative reasoning by \textbf{3\%} through development of novel fully synthetic training dataset without human annotation, becoming the \textbf{first engineer to contribute a fully synthetic dataset} to Command-R-Plus foundation model
 \item Created specialized evaluations for length control and adapted FinanceBench for base model assessment
 \item Conducted model ablation studies analyzing impact of specific datasets on cross-category performance
 \item Collaborated cross-functionally with evaluations, multilingual, and safety teams to generate synthetic multilingual data for model training
-\end{itemize}
-\vspace{1pt}
+\end{resumeitemize}
+\sectionspace
 
-\hspace{0.15in}{\large\bfseries Senior Data Quality Team Lead} \hfill {\small Jun 2023 -- Apr 2024} \\
-\hspace{0.15in}{\bfseries Cohere}, Toronto, Ontario, Canada
-\vspace{-1pt}
-\begin{itemize}[leftmargin=0.35in, itemsep=-1pt, topsep=1pt, labelsep=0.035in]
+\hspace{0.15in}\raisebox{-0.5\height}{\includegraphics[height=1em]{assets/cohere.png}} \experience{Senior Data Quality Team Lead}{Jun 2023 -- Apr 2024}{Cohere}{Toronto, Ontario, Canada}
+\begin{resumeitemize}
 \item Designed and deployed scalable data labeling platform with React/TypeScript frontend and Firebase/Firestore backend, processing 100,000+ tasks used by 200+ labelers, \textbf{saving ~\$3M in operational costs}
 \item Built backend data infrastructure and developed Python scripts with internal AppsScript applications analyzing tasks to extract insights for ML model improvements
 \item Led SFT/RLHF labeling projects and first cohort of STEM and code-focused labelers, working with external data vendors to consolidate data quality standards for post-training
-\end{itemize}
-\vspace{1pt}
+\end{resumeitemize}
+\sectionspace
 
-\hspace{0.15in}{\large\bfseries Data Quality Specialist} \hfill {\small May 2023 -- Jun 2023} \\
-\hspace{0.15in}{\bfseries Cohere}, Toronto, Ontario, Canada
-\vspace{-2pt}
-\begin{itemize}[leftmargin=0.35in, itemsep=-2pt, topsep=0pt, labelsep=0.035in]
+\hspace{0.15in}\raisebox{-0.5\height}{\includegraphics[height=1em]{assets/cohere.png}} \experience{Data Quality Specialist}{May 2023 -- Jun 2023}{Cohere}{Toronto, Ontario, Canada}
+\begin{resumeitemize}
 \item Delivered high-impact annotations including preference ranking, quality scoring, and SFT conversation generation across all domains
 \item Contributed to establishing data quality standards and annotation best practices
-\end{itemize}
-\vspace{-2pt}
+\end{resumeitemize}
+\sectionspace
 
 
 
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
 
-\vspace{-4pt}
-\begin{itemize}[leftmargin=0.35in, itemsep=-1pt, topsep=0pt, labelsep=0.035in]
-\item \textbf{Languages}: Python, TypeScript/JavaScript, SQL, C/C++, Bash, Nix
-\item \textbf{ML \& AI}: LLM Fine-tuning, RAG, RLHF, SFT, Synthetic Data Generation, Model Evaluation, PyTorch, JAX
-\item \textbf{Frameworks \& Libraries}: FastAPI, React, Pandas, Polars, Tailwind
-\item \textbf{Infrastructure}: AWS (S3, Lambda, Bedrock), Docker, Linux, NixOS, Slurm, Git, Redis, DuckDB, Firebase, Firestore
-\end{itemize}
+\hspace{0.15in}\textbf{Languages}: Python, TypeScript/JavaScript, SQL, C/C++, Bash, Nix \\
+\hspace{0.15in}\textbf{ML \& AI}: LLM Fine-tuning, RAG, RLHF, SFT, Synthetic Data Generation, Model Evaluation, PyTorch, JAX \\
+\hspace{0.15in}\textbf{Frameworks \& Libraries}: FastAPI, React, Pandas, Polars, Tailwind \\
+\hspace{0.15in}\textbf{Infrastructure}: AWS (S3, Lambda, Bedrock), Docker, Linux, NixOS, Slurm, Git, Redis, DuckDB, Firebase, Firestore
+\sectionspace
 
 %-----------SPEAKING-----------
 \section{Speaking}
@@ -113,25 +135,22 @@
 \hspace{0.15in}{\bfseries Guest Lecturer on AI and Synthetic Data Generation for MMA Program} \hfill {\small 2024} \\
 \hspace{0.15in}Queen's Smith School of Business, Kingston, Ontario \enspace$|$\enspace 50+ graduate students
 
-\vspace{6pt}
+\sectionspace
 
 %-----------PROJECTS-----------
 \section{Projects}
 
-\hspace{0.15in}{\bfseries \href{https://github.com/y0usaf/nixos}{NixOS Configuration}}
-\vspace{2pt}
-\begin{itemize}[leftmargin=0.35in, itemsep=0pt, topsep=0pt, labelsep=0.035in]
-\item Comprehensive system configuration with custom development environments
-\end{itemize}
-\vspace{4pt}
+\hspace{0.15in}\faGithub~\includegraphics[height=1em]{assets/nix.png} \href{https://github.com/y0usaf/nixos}{\bfseries NixOS System}
+\afterspacespace
+\begin{resumeitemize}
+\item Comprehensive system configuration for Desktop, Laptop, and Server environments
+\item Integrated services including Syncthing for file synchronization and Forgejo for self-hosted Git
+\end{resumeitemize}
+\sectionspace
 
-\hspace{0.15in}{\bfseries \href{https://github.com/y0usaf}{Minecraft Modding}}
-\vspace{2pt}
-\begin{itemize}[leftmargin=0.35in, itemsep=0pt, topsep=0pt, labelsep=0.035in]
-\item Created modpack \href{https://github.com/y0usaf/Samis-Randomizer}{Samis-Randomizer} for One Block worlds
-\item Contributor to \href{https://github.com/y0usaf/All-the-mods-10-Sky}{All The Mods 10: To The Sky} modpack
-\item Created modpacks like \href{https://github.com/y0usaf/Samis-AE-Infinity}{Samis-AE-Infinity} and \href{https://github.com/y0usaf/Expedition-33-Mods}{Expedition-33-Mods}
-\end{itemize}
-\vspace{4pt}
+\hspace{0.15in}\faGithub~\includegraphics[height=1em]{assets/java.png} \href{https://github.com/y0usaf/Samis-Randomizer}{\bfseries Samis-Randomizer} - A mod for Minecraft for One Block worlds \\
+\hspace{0.15in}\faGithub~\includegraphics[height=1em]{assets/java.png} \href{https://github.com/y0usaf/All-the-mods-10-Sky}{\bfseries All The Mods 10: To The Sky} - Contributor to popular Minecraft modpack \\
+\hspace{0.15in}\faGithub~\includegraphics[height=1em]{assets/java.png} \href{https://github.com/y0usaf/Samis-AE-Infinity}{\bfseries Samis-AE-Infinity} - Applied Energistics focused mod
+\sectionspace
 
 \end{document}
