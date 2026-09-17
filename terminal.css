@@ -85,3 +85,9 @@
 .terminal .dim { color: var(--terminal-dim); }
 .terminal .rule { color: var(--terminal-rule); }
 .terminal .strong { font-weight: 700; }
+
+.terminal .section-heading {
+  color: var(--terminal-accent);
+  font-weight: 700;
+  background: color-mix(in srgb, var(--terminal-accent) 8%, transparent);
+}
