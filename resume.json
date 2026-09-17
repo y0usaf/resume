@@ -1,0 +1,104 @@
+{
+  "person": {
+    "name": "SAMI ANSARI",
+    "location": "Toronto, Ontario, Canada",
+    "phone": "+1 647 289 6889",
+    "email": "SAnsari2805@Outlook.com",
+    "tagline": "machine-learning / ai-engineering",
+    "linkedin": "linkedin/in/samiansari99",
+    "github": "github/y0usaf"
+  },
+  "experience": [
+    {
+      "title": "AI-Native Software Engineer",
+      "company": "CookUnity",
+      "location": "Toronto",
+      "period": "Oct 2025 \u2014 Present",
+      "logo": "cookunity.png",
+      "bullets": [
+        "Shipped multi-model AI code review across 10+ repositories, with arbiter verdicts, cost/token telemetry, and Mixpanel ROI dashboards.",
+        "Built a performance review platform (Next.js, Supabase, Slack) for live HR pilots: AI-assisted writing, evidence capture, OKRs, and 1:1 transcript import.",
+        "Built WholesaleWare inventory reconciliation: roll-forward inventory, variance analysis, audited adjustments, and multi-warehouse reporting.",
+        "Founded a versioned, sandboxed Claude Code workflow marketplace with auto-discovery and deterministic hooks; extended it to Codex CLI and Opencode.",
+        "Led AI enablement intake for 100+ help requests and triaged 12+ cross-functional AI projects.",
+        "Deployed a remote MCP server and Ramp purchase-order automation for 3 3PL vendor pilots."
+      ]
+    },
+    {
+      "title": "AI Engineer (Contract)",
+      "company": "Rootly",
+      "location": "Toronto",
+      "period": "Oct 2024 \u2014 Dec 2024",
+      "logo": "rootly.png",
+      "bullets": [
+        "Founding AI engineer; built a RAG-based agent framework for root-cause analysis, integrating Rootly, Slack, and GitHub through an end-to-end data pipeline."
+      ]
+    },
+    {
+      "title": "Machine Learning Engineer Intern",
+      "company": "Cohere",
+      "location": "Toronto",
+      "period": "Apr 2024 \u2014 Oct 2024",
+      "logo": "cohere.png",
+      "bullets": [
+        "Improved LLM quantitative reasoning by 3%; first engineer to contribute a fully synthetic training dataset to Command-R-Plus, with no human annotation.",
+        "Built length-control evaluations, adapted FinanceBench for base models, and ran ablations to measure dataset impact across evaluation categories.",
+        "Partnered with evaluations, multilingual, and safety teams on synthetic multilingual data."
+      ]
+    },
+    {
+      "title": "Senior Data Quality Team Lead",
+      "company": "Cohere",
+      "location": "Toronto",
+      "period": "Jun 2023 \u2014 Apr 2024",
+      "logo": "cohere.png",
+      "bullets": [
+        "Built a React/TypeScript + Firebase labeling platform serving 200+ labelers and 100,000+ tasks, saving ~$3M in operational costs.",
+        "Built backend data infrastructure and Python/AppsScript tooling to surface ML insights.",
+        "Led SFT/RLHF projects and the first STEM/code labeling cohort; standardized post-training data quality with vendors."
+      ]
+    },
+    {
+      "title": "Data Quality Specialist",
+      "company": "Cohere",
+      "location": "Toronto",
+      "period": "May 2023 \u2014 Jun 2023",
+      "logo": "cohere.png",
+      "bullets": [
+        "Delivered preference rankings, quality scores, and SFT conversation annotations."
+      ]
+    }
+  ],
+  "speaking": {
+    "title": "Guest Lecturer: AI & Synthetic Data Generation / Queen's Smith School of Business",
+    "year": "2024",
+    "detail": "Kingston / 50+ MMA graduate students"
+  },
+  "projects": [
+    {
+      "name": "balatroAI",
+      "stack": "Python / PyTorch / PPO",
+      "description": "Built a Balatro RL pipeline with masked PPO, pointer policies, and reward shaping; shared bot API targets a simulator and the live game."
+    },
+    {
+      "name": "ekko",
+      "stack": "Common Lisp / C / Nix",
+      "description": "Built a SBCL terminal multiplexer with real PTYs, one persistent shared daemon, a Lisp extension API, and replaceable layout policy."
+    },
+    {
+      "name": "pi-jev",
+      "stack": "TypeScript / Jev",
+      "description": "Built a TypeSafe Jev decision layer for the Pi coding agent: a measured tool-call gate, an output judge, and typed calibrated answers instead of prose."
+    },
+    {
+      "name": "tomoe",
+      "stack": "Common Lisp / wlroots",
+      "description": "Built a Common Lisp Wayland compositor whose compositor loop, extension runtime, and every window-management behaviour are mountable extensions."
+    },
+    {
+      "name": "strictix",
+      "stack": "Rust / Nix",
+      "description": "Built a Nix linter from lexer/parser through semantic analysis, with schema-aware diagnostics and safe automatic fixes."
+    }
+  ]
+}

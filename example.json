@@ -1,0 +1,13 @@
+{"width": 56, "height": 16, "operations": [
+  {"op": "box", "x": 0, "y": 0, "width": 56, "height": 7, "title": " PIPELINE ", "style": "rule"},
+  {"op": "text", "x": 3, "y": 2, "text": "INPUT", "style": "strong", "scale": 2},
+  {"op": "line", "x1": 14, "y1": 3, "x2": 22, "y2": 3, "style": "rule"},
+  {"op": "box", "x": 22, "y": 2, "width": 14, "height": 3, "title": " SCORE ", "style": "accent"},
+  {"op": "line", "x1": 36, "y1": 3, "x2": 48, "y2": 3, "style": "rule"},
+  {"op": "text", "x": 49, "y": 3, "text": "OK", "style": "accent strong"},
+  {"op": "text", "x": 3, "y": 5, "text": "static · deterministic · reusable", "style": "dim"},
+  {"op": "text", "x": 2, "y": 9, "text": "accuracy", "style": "strong"},
+  {"op": "text", "x": 2, "y": 11, "text": "control  ██████████████████  88.0%"},
+  {"op": "text", "x": 2, "y": 13, "text": "variant  ███████████████████  92.4%", "style": "accent"},
+  {"op": "image", "x": 46, "y": 10, "width": 4, "height": 3, "src": "assets/github.png", "alt": "GitHub"}
+]}

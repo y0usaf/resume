@@ -1,0 +1,87 @@
+/* Minimal fixed-cell terminal surface.
+ * Copy this file, or link it from any static HTML document.
+ * Content belongs in a <pre class="terminal"> element.
+ * Override --terminal-* on .terminal for each surface.
+ */
+
+:root {
+  --terminal-cols: 80;
+  --terminal-rows: 24;
+  --terminal-cell-height: 1.2em;
+  --terminal-foreground: #17171a;
+  --terminal-background: #f5f4ef;
+  --terminal-accent: #0f5fd6;
+  --terminal-dim: #6e6e66;
+  --terminal-rule: #c3c1b6;
+  --terminal-font-family: monospace;
+  --terminal-cell-width: 1ch;
+}
+
+.terminal {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: repeat(var(--terminal-rows), var(--terminal-cell-height));
+  align-content: start;
+  width: var(--terminal-width, calc(var(--terminal-cols) * var(--terminal-cell-width)));
+  height: calc(var(--terminal-rows) * var(--terminal-cell-height));
+  max-width: none;
+  min-width: calc(var(--terminal-cols) * var(--terminal-cell-width));
+  margin: 0;
+  overflow: visible;
+  color: var(--terminal-foreground);
+  background: var(--terminal-background);
+  font-family: var(--terminal-font-family);
+  font-size: var(--terminal-font-size, 1em);
+  line-height: var(--terminal-cell-height);
+  font-variant-numeric: tabular-nums;
+  white-space: pre;
+  tab-size: 2;
+  -webkit-font-smoothing: none;
+  font-smooth: never;
+  font-kerning: none;
+  font-variant-ligatures: none;
+}
+
+/* Resolve columns once on the row. A styled child cannot change a grid track,
+ * even when its font weight or fallback glyph has a different advance width. */
+.terminal .terminal-row {
+  display: grid;
+  grid-template-columns: repeat(var(--terminal-cols), var(--terminal-cell-width));
+  width: calc(var(--terminal-cols) * var(--terminal-cell-width));
+  height: var(--terminal-cell-height);
+  vertical-align: top;
+}
+
+.terminal .terminal-cell {
+  box-sizing: border-box;
+  min-width: 0;
+  height: var(--terminal-cell-height);
+}
+
+.terminal .terminal-scaled-glyph {
+  display: inline-block;
+  width: calc(100% / var(--terminal-scale));
+  transform: scale(var(--terminal-scale));
+  transform-origin: top left;
+}
+
+.terminal .terminal-image {
+  box-sizing: border-box;
+  display: block;
+  grid-column: span var(--terminal-span-x);
+  width: calc(var(--terminal-span-x) * var(--terminal-cell-width));
+  height: calc(var(--terminal-span-y) * var(--terminal-cell-height));
+  object-fit: contain;
+  position: relative;
+  z-index: 1;
+}
+
+.terminal::selection,
+.terminal *::selection {
+  background: color-mix(in srgb, var(--terminal-accent) 24%, transparent);
+}
+
+.terminal .accent { color: var(--terminal-accent); }
+.terminal .dim { color: var(--terminal-dim); }
+.terminal .rule { color: var(--terminal-rule); }
+.terminal .strong { font-weight: 700; }

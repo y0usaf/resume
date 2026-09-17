@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sami Ansari</title>
+  <link rel="stylesheet" href="terminal.css">
+  <style>
+    @font-face { font-family: "Departure Mono"; src: url("assets/DepartureMono-Regular.ttf") format("truetype"); font-weight: 400; font-style: normal; font-display: block; }
+    :root { --canvas: #e4e3dc; --paper: #f5f4ef; --ink: #242321; --rule: #d1cec3; --dim: #6e6c64; --accent: #0f5fd6; }
+    * { box-sizing: border-box; }
+    html { background: var(--canvas); }
+    body { min-width: 0; margin: 0; padding: 32px; color: var(--ink); background: var(--canvas); }
+    .paper { width: min(8.5in, 100%); min-height: 11in; margin: 0 auto; padding: 60px 72px; background: var(--paper); box-shadow: 0 1px 3px rgb(0 0 0 / 14%), 0 12px 32px rgb(0 0 0 / 10%); }
+    .terminal { --terminal-cols: 96; --terminal-rows: 72; --terminal-font-size: 11px; --terminal-cell-height: 13px; --terminal-foreground: var(--ink); --terminal-background: var(--paper); --terminal-accent: var(--accent); --terminal-dim: var(--dim); --terminal-rule: var(--rule); width: 100%; height: auto; min-height: calc(var(--terminal-rows) * var(--terminal-cell-height)); overflow: visible; font-family: "Departure Mono", monospace; }
+    @media (max-width: 760px) { body { padding: 0; } .paper { width: max-content; min-height: 0; padding: 24px; box-shadow: none; } .terminal { overflow: visible; } }
+    @page { size: letter; margin: 0; }
+    @media print { html, body { margin: 0; padding: 0; background: #fff; } .paper { width: 8.5in; min-height: 0; height: auto; margin: 0; padding: 60px 72px; background: #fff; box-shadow: none; } .terminal { --terminal-background: #fff; } }
+  </style>
+</head>
+<body>
+  <main class="paper">
+    <pre class="terminal" aria-label="Sami Ansari résumé"><!-- GENERATED_RESUME --></pre>
+  </main>
+</body>
+</html>
