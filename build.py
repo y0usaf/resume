@@ -92,7 +92,6 @@ def render(data):
             label = row[1]
             if y > 6:
                 grid.line(0, y - 1, WIDTH - 1, y - 1, 'rule')
-            grid.text(5, y, '┃', 'section-heading')
             grid.text(6, y, label, 'section-heading')
             grid.line(8 + len(label), y, WIDTH - 5, y, 'rule')
         elif kind == 'job':
