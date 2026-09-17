@@ -15,7 +15,7 @@
     .terminal { --terminal-cols: 96; --terminal-rows: 72; --terminal-font-size: 11px; --terminal-cell-height: 13px; --terminal-foreground: var(--ink); --terminal-background: var(--paper); --terminal-accent: var(--accent); --terminal-dim: var(--dim); --terminal-rule: var(--rule); width: 100%; height: auto; min-height: calc(var(--terminal-rows) * var(--terminal-cell-height)); overflow: visible; font-family: "Departure Mono", monospace; }
     @media (max-width: 760px) { body { padding: 0; } .paper { width: max-content; min-height: 0; padding: 24px; box-shadow: none; } .terminal { overflow: visible; } }
     @page { size: letter; margin: 0; }
-    @media print { html, body { margin: 0; padding: 0; background: #fff; } .paper { width: 8.5in; min-height: 0; height: auto; margin: 0; padding: 60px 72px; background: #fff; box-shadow: none; } .terminal { --terminal-background: #fff; } }
+    @media print { html, body { margin: 0; padding: 0; background: #fff; } .paper { width: 8.5in; min-height: 0; height: auto; margin: 0; padding: 60px 72px; background: #fff; box-shadow: none; } .terminal { --terminal-background: #fff; } @media print { .terminal .section-heading { print-color-adjust: exact; -webkit-print-color-adjust: exact; } } }
   </style>
 </head>
 <body>

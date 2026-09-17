@@ -91,3 +91,10 @@
   font-weight: 700;
   background: color-mix(in srgb, var(--terminal-accent) 8%, transparent);
 }
+
+@media print {
+  .terminal .section-heading {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+}
