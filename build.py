@@ -82,18 +82,14 @@ def render(data):
     grid.text(6, 2, person['name'], 'strong', scale=2)
     grid.text(WIDTH - 4 - len(person['location']), 2, person['location'], 'dim')
     grid.text(WIDTH - 4 - len(contact), 3, contact, 'dim')
-    # Keep the header grouped without introducing a box or a full-width rule.
-    grid.line(6, 1, 19, 1, 'accent')
     paired(grid, 4, person['tagline'], links, inset=6, right_inset=4, style='accent')
     y = 6
     for row in rows:
         kind = row[0]
         if kind == 'section':
             label = row[1]
-            if y > 6:
-                grid.line(0, y - 1, WIDTH - 1, y - 1, 'rule')
+            grid.line(0, y - 1, WIDTH - 1, y - 1, 'rule')
             grid.text(6, y, label, 'section-heading')
-            grid.line(8 + len(label), y, WIDTH - 5, y, 'rule')
         elif kind == 'job':
             job = row[1]
             role = ' / ' + job['title']
