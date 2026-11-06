@@ -1,0 +1,109 @@
+{
+  "person": {
+    "name": "Sami Ansari",
+    "location": "Toronto, ON, Canada",
+    "phone": "+1 (647) 289-6889",
+    "email": "sansari2805@outlook.com",
+    "linkedin": "linkedin.com/in/samiansari99",
+    "github": "github.com/y0usaf"
+  },
+  "experience": [
+    {
+      "title": "AI-Native Software Engineer",
+      "company": "CookUnity",
+      "location": "Toronto",
+      "period": "Oct 2025 \u2013 Present",
+      "bullets": [
+        "Took **multi-model AI code review to 500+ repositories**: parallel reviewers, an arbiter, and ROI tracking in Mixpanel.",
+        "Built the AI coding plugin marketplace: versioned, sandboxed plugins for Claude Code, Codex CLI, and OpenCode.",
+        "Built an AI-assisted performance review platform (Next.js, Supabase, Slack), now running live HR pilots.",
+        "Stood up a remote MCP server for AI agents and automated Ramp purchase orders across three 3PL pilots.",
+        "Owned intake for 100+ AI enablement requests and set priorities across 12+ cross-functional AI projects.",
+        "Built WholesaleWare's inventory reconciliation: roll-forward, variance, audited adjustments, multi-warehouse reports."
+      ],
+      "logo": "cookunity.png"
+    },
+    {
+      "title": "AI Engineer (Contract)",
+      "company": "Rootly",
+      "location": "Toronto",
+      "period": "Oct 2024 \u2013 Dec 2024",
+      "bullets": [
+        "Founding AI engineer: designed and built Rootly's **RAG root-cause agent** end to end over incidents, Slack, and GitHub."
+      ],
+      "logo": "rootly.png"
+    },
+    {
+      "title": "Machine Learning Engineer Intern",
+      "company": "Cohere",
+      "location": "Toronto",
+      "period": "Apr 2024 \u2013 Oct 2024",
+      "bullets": [
+        "**First engineer to contribute fully synthetic training data** to Command R+; lifted LLM quantitative reasoning 3%.",
+        "Built length-control evals, adapted FinanceBench for base models, and ran the ablations measuring each dataset's impact."
+      ],
+      "logo": "cohere.png"
+    },
+    {
+      "title": "Senior Data Quality Team Lead",
+      "company": "Cohere",
+      "location": "Toronto",
+      "period": "Jun 2023 \u2013 Apr 2024",
+      "bullets": [
+        "Built a React/TypeScript + Firebase **labeling platform for 200+ labelers, saving ~$3M**.",
+        "Led SFT/RLHF data for Cohere's LLMs, launched the first STEM/code labeling cohort, and set the vendor quality bar."
+      ],
+      "logo": "cohere.png"
+    }
+  ],
+  "projects": [
+    {
+      "name": "balatroAI",
+      "url": "https://github.com/y0usaf/balatroai",
+      "stack": "Python \u00b7 PyTorch \u00b7 PPO",
+      "description": "**Balatro RL agent** that plays the live game: masked PPO, pointer-network action heads, one API for simulator and game."
+    },
+    {
+      "name": "pi-jev",
+      "url": "https://github.com/y0usaf/pi-jev",
+      "stack": "TypeScript \u00b7 npm",
+      "description": "**LLM-judged safety gate** for Pi coding agents, on npm: scores every bash/write/edit call for damage, exfiltration, scope."
+    },
+    {
+      "name": "steam-frame-nixos",
+      "url": "https://github.com/y0usaf/steam-frame-nixos",
+      "stack": "Nix \u00b7 aarch64 \u00b7 SteamVR",
+      "description": "**World's first to flash a custom OS onto Valve's Steam Frame**, 10 days after launch: rebuilt Valve's kernel and graphics stack from source on NixOS; tracking, controllers, SteamVR, and Steam login all work, with no firmware modified."
+    },
+    {
+      "name": "cudaterm",
+      "url": "https://github.com/y0usaf/cudaterm",
+      "stack": "CUDA \u00b7 C++ \u00b7 OpenGL",
+      "description": "**Terminal emulator built entirely with CUDA**: the GPU parses escape codes, holds screen state, and draws every glyph."
+    },
+    {
+      "name": "strictix",
+      "url": "https://github.com/y0usaf/strictix",
+      "stack": "Rust \u00b7 Nix",
+      "description": "Nix static analyzer built from scratch: lexer, parser, semantic analysis, schema-aware diagnostics, and safe auto-fixes."
+    }
+  ],
+  "skills": {
+    "Model work": "RL training in PyTorch/JAX, **synthetic data generation for SFT/RLHF/RLAIF**, LLM evals and ablations",
+    "AI systems": "**Agent harnesses**, multi-model pipelines, RAG, MCP servers, LLM judges, coding-agent tooling",
+    "Languages": "Python, TypeScript, Rust, Nix, SQL",
+    "Infrastructure": "AWS (Bedrock, Lambda, S3), GCP, Vercel, Supabase, Firebase, Docker, NixOS, Slurm, **CUDA**"
+  },
+  "speaking": {
+    "title": "Guest Lecturer: AI & Synthetic Data Generation",
+    "year": "2024",
+    "detail": "Queen's Smith School of Business \u00b7 **Master of Management Analytics** program \u00b7 50+ graduate students"
+  },
+  "education": [
+    {
+      "school": "University of Toronto",
+      "degree": "BSc, Computer Science and Mathematics",
+      "period": "Sep 2017 \u2013 May 2022"
+    }
+  ]
+}
